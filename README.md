@@ -3,7 +3,7 @@ LLL: Lower Level Library - SQL: Structure Query Language for high performance da
 
 # Performance 
 
-This repository contains a high performance database system that operates using SQL, built as a means to be a drop-in replacement to MySQL servers, that improves performance substantially. The LLD is O(1), so tables and queries will always execute in constant time no matter how large the database becomes. 
+This repository will contain a high performance database system that operates using SQL, built as a means to be a drop-in replacement to MySQL servers, that improves performance substantially. The LLD is O(1), so tables and queries will always execute in constant time no matter how large the database becomes. 
 
 The LLD benchmarks currently stand at:
 
