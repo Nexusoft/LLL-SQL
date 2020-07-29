@@ -5,16 +5,17 @@ LLL: Lower Level Library - SQL: Structure Query Language for high performance da
 
 This repository will contain a high performance database system that operates using SQL, built as a means to be a drop-in replacement to MySQL servers, that improves performance substantially. The LLD is O(1), so tables and queries will always execute in constant time no matter how large the database becomes. 
 
-The LLD benchmarks currently stand at:
+## The LLD benchmarks currently stand at:
 
-180k Random Reads per Second
-120k Random Writes per Second
-600k Random Keychain Checks per Second (to determine if a key is in the dataset)
-1200k Sequential Reads per Second
+- 180k Random Reads per Second
+- 120k Random Writes per Second
+- 600k Random Keychain Checks per Second (to determine if a key is in the dataset)
+- 1200k Sequential Reads per Second
 
-The LLP benchmarks currently stand at:
+## The LLP benchmarks currently stand at:
 
-450k Requests per Second, up to ulimit concurrent connections.
+- 450k Requests per Second
+- Max Concurrent Connections consistent with ulimit rather than available threads
 
 # Development 
 
