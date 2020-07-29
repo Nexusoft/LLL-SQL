@@ -24,3 +24,7 @@ This development tree will implement a SQL parser on top of an LLP for MySQL and
 # Integrations 
 
 Using the MySQL protocol as a drop-in replacement, we will begin with some basic integrations such as using the LLL-SQL backend to power WordPress sites among many others. 100k requests per second is a MASSIVE website, so based on projections a single server should be able to do with the LLL-SQL what would take 50 servers clustered using MySQL with the same level of performance. This should overall reduce overhead associated with large websites, and reduce the load balancing required to manage such a large server cluster.
+
+# Graphing Database Semantics 
+
+The Datachain in the LLD can contain mappings to other keys associated with a JOIN operation, significantly improving the performance of JOIN queries. This will enable foreign keys and relational models to be joined while retaining Sequential Read Performance. JOIN is a wonderful operation for SQL, but very resource intensive. We intend this architecure to make JOIN queries fast and efficient, potentially reaching 50-100k JOIN operations per second.
