@@ -19,7 +19,7 @@ This repository will contain a high performance database system that operates us
 
 # Development 
 
-This development tree will implement a SQL parser on top of an LLP for MySQL and Postgres protocols, to act as a drop-in replacement for current databases powering the internet. MySQL maxes out at 2k queries per second, this project will be updated with benchamrks of the complete LLL-SQL performance once completed, but we anticipate 50-100k queries per second, being that most SELECT queries can use Sequential Reads that operate at 1.2M rows per second. Performance could very well be over 100k queries per second, and a maximum of 120k inserts or updates per second.
+This development tree will implement a SQL parser on top of an LLP for MySQL and Postgres protocols, to act as a drop-in replacement for current databases powering the internet. MySQL has difficulties with large datasets and workloads, this project will be updated with benchamrks of the complete LLL-SQL performance once completed, but we anticipate 50-100k queries per second, being that most SELECT queries can use Sequential Reads that operate at 1.2M rows per second. Performance could very well be over 100k queries per second, and a maximum of 120k inserts or updates per second.
 
 # Integrations 
 
@@ -27,4 +27,4 @@ Using the MySQL protocol as a drop-in replacement, we will begin with some basic
 
 # Graphing Database Semantics 
 
-The Datachain in the LLD can contain mappings to other keys associated with a JOIN operation, significantly improving the performance of JOIN queries. This will enable foreign keys and relational models to be joined while retaining Sequential Read Performance. JOIN is a wonderful operation for SQL, but very resource intensive. We intend this architecure to make JOIN queries fast and efficient, potentially reaching 50-100k JOIN operations per second.
+The Datachain in the LLD can contain mappings to other keys associated with a JOIN operation, significantly improving the performance of JOIN queries. This will enable foreign keys and relational models to be joined while retaining Sequential Read Performance. JOIN is a wonderful operation for SQL, but very resource intensive. We intend this architecure to make JOIN queries fast and efficient.
